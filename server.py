@@ -107,7 +107,7 @@ def start_server():
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((server_ip, server_port))
-    server.listen(5)
+    server.listen(30)
     print(f"Servidor rodando em {server_ip}:{server_port}")
 
     while True:
