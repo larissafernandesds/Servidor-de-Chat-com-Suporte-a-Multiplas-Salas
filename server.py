@@ -8,12 +8,16 @@ def handle_client(client_socket, addr):
     sala_atual = None
     nome = None  # Nome será o apelido do usuário
 
+    print(f"Nova conexão de {addr} (aguardando apelido...)")
+
     # Solicitar ao cliente o apelido
     client_socket.send("Digite seu apelido: ".encode("utf-8"))
     nome = client_socket.recv(1024).decode().strip()
 
     if not nome:
         nome = f"Usuário-{addr[1]}"  # Atribui um nome padrão se não for fornecido
+
+    print(f"Cliente conectado: {nome} ({addr})")
 
     client_socket.send(f"Bem-vindo ao chat, {nome}! Use os comandos:\n"
                        "/salas - listar salas disponíveis\n"
@@ -29,7 +33,6 @@ def handle_client(client_socket, addr):
                 break
 
             if msg.startswith("/salas"):
-                # Lista as salas disponíveis
                 salas_disponiveis = ", ".join(salas.keys()) if salas else "Nenhuma sala disponível."
                 client_socket.send(f"Salas disponíveis: {salas_disponiveis}\n".encode("utf-8"))
 
@@ -38,7 +41,7 @@ def handle_client(client_socket, addr):
                 if nome_sala in salas:
                     client_socket.send("⚠️ Essa sala já existe! Tente outro nome.\n".encode("utf-8"))
                 else:
-                    salas[nome_sala] = {"clientes": []}  # Salva sala vazia
+                    salas[nome_sala] = {"clientes": []}
                     client_socket.send(f"✅ Sala '{nome_sala}' criada com sucesso!\n".encode("utf-8"))
 
             elif msg.startswith("/entrar "):
@@ -48,15 +51,12 @@ def handle_client(client_socket, addr):
                 else:
                     if sala_atual:
                         salas[sala_atual]["clientes"].remove(client_socket)
-                        # Avisar a sala que alguém saiu
                         for cliente in salas[sala_atual]["clientes"]:
                             cliente.send(f"📝 {nome} saiu da sala '{sala_atual}'.\n".encode("utf-8"))
 
-                    # Adiciona o cliente na sala
                     salas[nome_sala]["clientes"].append(client_socket)
                     sala_atual = nome_sala
 
-                    # Avisar a sala que alguém entrou
                     for cliente in salas[nome_sala]["clientes"]:
                         if cliente != client_socket:
                             cliente.send(f"📝 {nome} entrou na sala '{nome_sala}'.\n".encode("utf-8"))
@@ -65,7 +65,6 @@ def handle_client(client_socket, addr):
             elif msg.startswith("/sair"):
                 if sala_atual:
                     salas[sala_atual]["clientes"].remove(client_socket)
-                    # Avisar a sala que alguém saiu
                     for cliente in salas.get(sala_atual, {}).get("clientes", []):
                         cliente.send(f"📝 {nome} saiu da sala '{sala_atual}'.\n".encode("utf-8"))
                     sala_atual = None
@@ -74,7 +73,6 @@ def handle_client(client_socket, addr):
                     client_socket.send("⚠️ Você não está em nenhuma sala.\n".encode("utf-8"))
 
             elif msg.startswith("/sair_chat"):
-                # Avisar os outros clientes que o usuário saiu
                 if sala_atual:
                     for cliente in salas[sala_atual]["clientes"]:
                         if cliente != client_socket:
@@ -84,7 +82,6 @@ def handle_client(client_socket, addr):
 
             else:
                 if sala_atual:
-                    # Envia a mensagem para todos os participantes da sala
                     mensagem = f"[{nome}] {msg}\n"
                     for cliente in salas[sala_atual]["clientes"]:
                         if cliente != client_socket:
@@ -97,17 +94,15 @@ def handle_client(client_socket, addr):
 
     if sala_atual and client_socket in salas.get(sala_atual, {}).get("clientes", []):
         salas[sala_atual]["clientes"].remove(client_socket)
-        if not salas[sala_atual]["clientes"]:  # Remove sala vazia
+        if not salas[sala_atual]["clientes"]:
             del salas[sala_atual]
 
-    # Mostrar no servidor que o usuário desconectou
-    print(f"{nome} desconectou do chat.")
+    print(f"{nome} {addr} desconectou do chat.")
     client_socket.close()
 
 
 def start_server():
-    # Configurar o servidor para aceitar conexões de qualquer IP (ou um IP específico)
-    server_ip = "0.0.0.0"  # Aceita conexões de qualquer interface de rede
+    server_ip = "0.0.0.0"
     server_port = 12345
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -117,9 +112,9 @@ def start_server():
 
     while True:
         client_socket, addr = server.accept()
-        print(f"Nova conexão de {addr}")
         threading.Thread(target=handle_client, args=(client_socket, addr), daemon=True).start()
 
 if __name__ == "__main__":
     start_server()
+
 
