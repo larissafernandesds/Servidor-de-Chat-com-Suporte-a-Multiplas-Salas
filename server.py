@@ -102,7 +102,7 @@ def handle_client(client_socket, addr):
 
 
 def start_server():
-    server_ip = "0.0.0.0"
+    server_ip = "0.0.0.0" #IP SERVIDOR
     server_port = 12345
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

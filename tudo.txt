@@ -1,0 +1,16 @@
+- python3 ou python? SUBIR GIT
+- navegador
+- clonar/ execução / ip
+- explicação cod e demonstração
+- MSG REPETIDA DGT APELIDO
+
+
+- comentários (funções etc)
+- testar varios clientes e chats
+- LISTAR USUÁRIOS DO CHAT?
+
+
+
+- readme
+- relatório
+- ATENDE AOS CRITÉRIOS?
