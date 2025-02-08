@@ -24,8 +24,9 @@ def receive_messages(sock):
 
 
 server_ip = "127.0.0.1"  # IP (padrão "127.0.0.1" para localhost)
+server_port = 6789 # porta do servidor
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # criação do socket do cliente para comunicação via TCP/IP
-client.connect((server_ip, 12345)) # conecta ao servidor na porta 12345
+client.connect((server_ip, server_port)) # conecta ao servidor na porta 
 
 # criação de uma thread para receber mensagens do servidor de forma assíncrona
 threading.Thread(target=receive_messages, args=(client,), daemon=True).start() 
