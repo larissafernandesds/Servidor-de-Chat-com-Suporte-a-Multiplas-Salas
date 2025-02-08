@@ -22,8 +22,8 @@ def handle_client(client_socket, addr):
 
     print(f"Nova conexão de {addr} (aguardando apelido...)")
 
-     # solicita ao cliente seu apelido
-    client_socket.send("Digite seu apelido: ".encode("utf-8"))
+    # solicita ao cliente seu apelido
+    #client_socket.send("Digite seu apelido: ".encode("utf-8"))
     nome = client_socket.recv(1024).decode().strip()
 
     # caso o cliente não forneça um apelido, atribui um nome padrão
@@ -31,9 +31,11 @@ def handle_client(client_socket, addr):
         nome = f"Usuário-{addr[1]}"  
 
     print(f"Cliente conectado: {nome} ({addr})")
+    client_socket.send("\n__Conectado ao servidor__\n".encode())
+ 
 
     # envia instruções para o cliente
-    client_socket.send(f"Bem-vindo ao chat, {nome}! Use os comandos:\n"
+    client_socket.send(f"\nBem-vindo ao chat, {nome}! Use os comandos:\n"
                        "/salas - listar salas disponíveis\n"
                        "/criar <sala> - criar uma nova sala\n"
                        "/entrar <sala> - entrar em uma sala existente\n"
@@ -149,5 +151,3 @@ def start_server():
 
 if __name__ == "__main__": # se importar esse arquivo em outro, não executa automáticamente
     start_server()
-
-
