@@ -1,14 +1,13 @@
-- python3 ou python? SUBIR GIT
 - navegador
-- clonar/ execução / ip
 - explicação cod e demonstração
 - MSG REPETIDA DGT APELIDO
 
-
+- tirar requirements e deixar como comentário no readme!!
+- python3 ou python? SUBIR GIT (ver versao python lab)
+- clonar/ execução / ip (inet em enp2s0f1 cabeada)
 - comentários (funções etc)
 - testar varios clientes e chats
 - LISTAR USUÁRIOS DO CHAT?
-
 
 
 - readme

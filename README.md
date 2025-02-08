@@ -22,11 +22,12 @@ Lista de dependências necessárias.
 ### Instruções de Execução
 1. Clone o repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/larissafernandesds/Servidor-de-Chat-com-Suporte-a-Multiplas-Salas.git
    ```
 2. Instale as dependências:
    ```bash
-   pip install -r requirements.txt  # Exemplo para Python
+   pip install -r requirements.txt  
+   
    ```
 3. Execute o servidor:
    ```bash
