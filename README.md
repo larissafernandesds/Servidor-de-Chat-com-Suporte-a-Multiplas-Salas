@@ -9,9 +9,9 @@
 
 
 ## Tecnologias Utilizadas
- **Linguagem de programação utilizada**
-- Python
- **Bibliotecas/Frameworks utilizados**
+ **Linguagem de programação utilizada:** Python
+
+ **Bibliotecas/Frameworks utilizados:**
 - socket → Comunicação via sockets
 - threading → Manipulação de threads
 
@@ -52,6 +52,7 @@
 
 - /sair_chat - Desconecta do chat (servidor).
 
+
 ## Funcionalidades Implementadas
 
 **No Servidor:**
@@ -67,6 +68,8 @@
 - Criar e entrar em salas de chat.
 - Enviar e receber mensagens em tempo real.
 - Desconectar-se corretamente.
+
+Para melhores informações, leia o relatório do projeto.
 
 ## Possíveis Melhorias Futuras
 - Interface Gráfica.
