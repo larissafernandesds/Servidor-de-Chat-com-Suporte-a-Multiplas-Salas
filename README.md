@@ -18,9 +18,9 @@
 ## Como Executar
 
 ### Requisitos
-  ```bash
-    Versão instalada do Python>=3.6 (uso de f-strings)
-   ```
+  
+    -Versão instalada do Python>=3.6 (uso de f-strings)
+  
 
 ### Instruções de Execução
 1. Clone o repositório:
@@ -69,7 +69,7 @@
 - Enviar e receber mensagens em tempo real.
 - Desconectar-se corretamente.
 
-Para melhores informações, leia o relatório do projeto.
+Para maiores informações, leia o relatório do projeto.
 
 ## Possíveis Melhorias Futuras
 - Interface Gráfica.
