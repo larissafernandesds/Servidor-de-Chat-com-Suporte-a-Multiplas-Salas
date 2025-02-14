@@ -9,11 +9,11 @@
 
 
 ## Tecnologias Utilizadas
-- **Linguagem de programação utilizada**
--- Python
-- **Bibliotecas/Frameworks utilizados**
--- socket → Comunicação via sockets
--- threading → Manipulação de threads
+ **Linguagem de programação utilizada**
+- Python
+ **Bibliotecas/Frameworks utilizados**
+- socket → Comunicação via sockets
+- threading → Manipulação de threads
 
 ## Como Executar
 
@@ -41,26 +41,26 @@
    ```
 
 ## Como Testar
-- Use os comandos disponíveis:
--- /salas - Lista todas as salas disponíveis.
+ Use os comandos disponíveis:
+- /salas - Lista todas as salas disponíveis.
 
--- /criar <nome_da_sala> - Cria uma nova sala.
+- /criar <nome_da_sala> - Cria uma nova sala.
 
--- /entrar <nome_da_sala> - Entra em uma sala existente.
+- /entrar <nome_da_sala> - Entra em uma sala existente.
 
--- /sair - Sai da sala atual.
+- /sair - Sai da sala atual.
 
--- /sair_chat - Desconecta do chat (servidor).
+- /sair_chat - Desconecta do chat (servidor).
 
 ## Funcionalidades Implementadas
 
--**No Servidor:**
+**No Servidor:**
 
 - Aceita múltiplos clientes simultaneamente.
 - Gerencia salas de chat separadas.
 - Notifica usuários sobre entradas e saídas das salas.
 
--**No Cliente:**
+**No Cliente:**
 
 - Conectar-se ao servidor.
 - Enviar um apelido para identificação.
