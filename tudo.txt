@@ -1,18 +1,23 @@
 - explicação cod e demonstração
-- MSG REPETIDA DGT APELIDO
-
+- relatório
 - TESTAR TUDO
-- navegador?
+
+
+-MEMORIA
+- algo em mente pra fazer melhorias?
+- tem algo inovador??
+
 - encerramento de theding e fechamento de socjet (quando exceção)
 - CONTROL C
 - tirar requirements e deixar como comentário no readme!!
+
+- tirei requirements
 - python3 ou python? SUBIR GIT (ver versao python lab)
 - clonar/ execução / ip (inet em enp2s0f1 cabeada)
 - comentários (funções etc)
 - testar varios clientes e chats
 - LISTAR USUÁRIOS DO CHAT?
-
-
+- msg repetida no apelido (ok)
+- navegador?
 - readme
-- relatório
 - ATENDE AOS CRITÉRIOS?
