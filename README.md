@@ -10,16 +10,16 @@
 
 ## Tecnologias Utilizadas
 - **Linguagem de programação utilizada**
-- Python
+-- Python
 - **Bibliotecas/Frameworks utilizados**
-- socket → Comunicação via sockets
-- threading → Manipulação de threads
+-- socket → Comunicação via sockets
+-- threading → Manipulação de threads
 
 ## Como Executar
 
 ### Requisitos
   ```bash
-    Precisa ter versão do Python>=3.6 (f-strings)
+    Versão instalada do Python>=3.6 (uso de f-strings)
    ```
 
 ### Instruções de Execução
@@ -31,7 +31,6 @@
    ```bash
    variável -> server_ip
    ```
-   ```
 3. Execute o servidor:
    ```bash
    python server.py
@@ -42,18 +41,32 @@
    ```
 
 ## Como Testar
-/salas → Lista salas disponíveis.
+- Use os comandos disponíveis:
+-- /salas - Lista todas as salas disponíveis.
 
-/criar <nome> → Cria uma nova sala.
+-- /criar <nome_da_sala> - Cria uma nova sala.
 
-/entrar <nome> → Entra em uma sala existente.
+-- /entrar <nome_da_sala> - Entra em uma sala existente.
 
-/sair → Sai da sala atual.
+-- /sair - Sai da sala atual.
 
-/sair_chat → Desconecta do servidor.
+-- /sair_chat - Desconecta do chat (servidor).
 
 ## Funcionalidades Implementadas
-- Lista das funcionalidades desenvolvidas.
+
+-**No Servidor:**
+
+- Aceita múltiplos clientes simultaneamente.
+- Gerencia salas de chat separadas.
+- Notifica usuários sobre entradas e saídas das salas.
+
+-**No Cliente:**
+
+- Conectar-se ao servidor.
+- Enviar um apelido para identificação.
+- Criar e entrar em salas de chat.
+- Enviar e receber mensagens em tempo real.
+- Desconectar-se corretamente.
 
 ## Possíveis Melhorias Futuras
 - Interface Gráfica.
