@@ -1,6 +1,8 @@
 - explicação cod e demonstração
 - relatório
 - TESTAR TUDO
+- UPAR COM IP DO LAB
+- LER FOLHAS 
 
 
 -MEMORIA

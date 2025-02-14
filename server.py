@@ -35,7 +35,7 @@ def handle_client(client_socket, addr):
  
 
     # envia instruções para o cliente
-    client_socket.send(f"\nBem-vindo ao chat, {nome}! Use os comandos:\n"
+    client_socket.send(f"\nBem-vindo(a) ao chat, {nome}! Use os comandos:\n"
                        "/salas - listar salas disponíveis\n"
                        "/criar <sala> - criar uma nova sala\n"
                        "/entrar <sala> - entrar em uma sala existente\n"

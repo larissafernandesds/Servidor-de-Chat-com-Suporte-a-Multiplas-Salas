@@ -18,9 +18,7 @@
 ## Como Executar
 
 ### Requisitos
-  
-    -Versão instalada do Python>=3.6 (uso de f-strings)
-  
+- Versão instalada do Python>=3.6 (uso de f-strings)
 
 ### Instruções de Execução
 1. Clone o repositório:
