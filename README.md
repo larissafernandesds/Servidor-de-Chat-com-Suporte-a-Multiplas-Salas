@@ -39,7 +39,7 @@
    ```
 
 ## Como Testar
- Use os comandos disponíveis:
+ Use os comandos disponíveis no terminal do cliente:
 - /salas - Lista todas as salas disponíveis.
 
 - /criar <nome_da_sala> - Cria uma nova sala.
@@ -49,6 +49,8 @@
 - /sair - Sai da sala atual.
 
 - /sair_chat - Desconecta do chat (servidor).
+
+- Ctrl+C - Usado no terminal do servidor para interromper sua execução.
 
 
 ## Funcionalidades Implementadas
