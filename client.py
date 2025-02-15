@@ -23,7 +23,7 @@ def receive_messages(sock):
             break # em caso de erro, encerra a função
 
 
-server_ip = "127.0.0.1"  # IP (padrão "127.0.0.1" para localhost)
+server_ip = "192.168.28.43"  # IP (padrão "127.0.0.1" para localhost)
 server_port = 6789 # porta do servidor
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # criação do socket do cliente para comunicação via TCP/IP
 client.connect((server_ip, server_port)) # conecta ao servidor na porta

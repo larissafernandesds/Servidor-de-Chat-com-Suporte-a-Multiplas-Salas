@@ -135,7 +135,7 @@ def start_server():
     Retorno:
     - Sem retorno explícito, o servidor fica rodando...
     """
-    server_ip = "127.0.0.1" #IP SERVIDOR!!
+    server_ip = "192.168.28.43" #IP SERVIDOR!!
     server_port = 6789 # porta do servidor
 
     # criação do socket TCP
