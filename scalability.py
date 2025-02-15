@@ -5,7 +5,7 @@ import time
 # Configurações
 HOST = "127.0.0.1" # IP servidor
 PORT = 6789 
-NUM_CONNECTIONS = 40 # Número de clientes simultâneos
+NUM_CONNECTIONS = 500 # Número de clientes simultâneos
 TEMPO_DE_ESPERA = 5  # Tempo em segundos antes de todos se desconectarem
 
 # Lock para sincronizar os prints
