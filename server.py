@@ -141,7 +141,7 @@ def start_server():
     # criação do socket TCP
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((server_ip, server_port)) # vincula o socket ao endereço e porta
-    server.listen(30) # define um limite de 30 conexões simultâneas
+    server.listen(30) # ele especifica o número de conexões não aceitas que o sistema permitirá antes de recusar novas conexões. 
     print(f"Servidor rodando em {server_ip}:{server_port}")
 
     # loop principal para aceitar conexões
