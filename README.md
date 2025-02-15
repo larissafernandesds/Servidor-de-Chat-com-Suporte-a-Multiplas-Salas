@@ -67,7 +67,7 @@
 - Enviar e receber mensagens em tempo real.
 - Desconectar-se corretamente.
 
-Para maiores informações, leia o relatório do projeto.
+Para maiores informações, leia o **relatório** do projeto.
 
 ## Possíveis Melhorias Futuras
 - Interface Gráfica.
