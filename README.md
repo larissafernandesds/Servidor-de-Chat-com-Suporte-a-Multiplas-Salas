@@ -27,7 +27,7 @@
 
 2. Altere o IP no servidor/cliente, se necessário:
    ```bash
-   variável -> server_ip
+   variável → server_ip
    ```
 3. Execute o servidor:
    ```bash
