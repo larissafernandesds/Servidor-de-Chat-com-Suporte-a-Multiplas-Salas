@@ -57,9 +57,9 @@
 
 **No Servidor:**
 
-- Aceita múltiplos clientes simultaneamente.
-- Gerencia salas de chat separadas.
-- Notifica usuários sobre entradas e saídas das salas.
+- Aceitar múltiplos clientes simultaneamente.
+- Gerenciar salas de chat separadas.
+- Notificar usuários sobre entradas e saídas das salas...
 
 **No Cliente:**
 
@@ -67,7 +67,7 @@
 - Enviar um apelido para identificação.
 - Criar e entrar em salas de chat.
 - Enviar e receber mensagens em tempo real.
-- Desconectar-se corretamente.
+- Desconectar-se corretamente...
 
 Para maiores informações, leia o **relatório** do projeto.
 
