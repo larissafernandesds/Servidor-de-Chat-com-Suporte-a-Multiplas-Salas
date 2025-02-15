@@ -39,7 +39,7 @@
    ```
 
 ## Como Testar
- Use os comandos disponíveis no terminal do cliente:
+ Use os comandos disponíveis no terminal do:
 - /salas - Lista todas as salas disponíveis.
 
 - /criar <nome_da_sala> - Cria uma nova sala.

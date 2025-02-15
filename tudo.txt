@@ -1,19 +1,14 @@
-- explicação cod e demonstração
+- MEMORIA!! e ADICIONAR relatório!!
+- explicação cod e demonstração (LER FOLHAS)
+- UPAR COM IP DO LAB e deixar repo publ
+- encerramento de theding e fechamento de socjet (quando exceção)
+
 - relatório
 - TESTAR TUDO
-- UPAR COM IP DO LAB
-- LER FOLHAS 
-
- - MEMORIA!! e ADICIONAR relatório!!
-
 - algo em mente pra fazer melhorias?
-- tem algo inovador??
-
-- encerramento de theding e fechamento de socjet (quando exceção)
+- tem algo inovador?? mem
 - CONTROL C
 - tirar requirements e deixar como comentário no readme!!
-
-- tirei requirements
 - python3 ou python? SUBIR GIT (ver versao python lab)
 - clonar/ execução / ip (inet em enp2s0f1 cabeada)
 - comentários (funções etc)
